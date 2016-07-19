@@ -7,7 +7,7 @@ html, body {
 .header {
   border-bottom: solid #1FBCBC 10px;
   padding-top: 0.4em;
-  padding-bottom: 0.7em;
+  padding-bottom: 1em;
 }
 
 .container {
@@ -36,19 +36,6 @@ html, body {
   transition: all 0.4s ease;
 }
 
-.side-icons > span:hover {
-  padding-bottom: 2px;
-}
-
-.side-icons > span:hover:after {
-  left: 4px;
-  width: 58px;
-  border-radius: 58px / 8px;
-  -moz-border-radius: 58px / 8px;
-  -webkit-border-radius: 58px / 8px;
-  opacity: 0.8;
-}
-
 .side-icons > span:after {
   content: '';
   position: absolute;
@@ -61,7 +48,6 @@ html, body {
   border-radius: 54px / 8px;
   -moz-border-radius: 54px / 8px;
   -webkit-border-radius: 54px / 8px;
-  transition: all 0.4s ease;
 }
 
 .title {
@@ -69,7 +55,6 @@ html, body {
 }
 
 .user-icon {
-  margin-right: 3em;
   margin-right: 2.9em;
   margin-bottom: 0.1em;
 }
@@ -79,10 +64,10 @@ html, body {
 }
 
 .subtitle {
-  font: 300 2.9em Lato, sans-serif;
+  font: 300 2.6em Lato, sans-serif;
   color: #323132;
   margin-left: 1.6em;
-  margin-top: 0.2em;
+  margin-top: 0.1em;
 }
 
 .content {
@@ -96,7 +81,15 @@ html, body {
   letter-spacing: 0.12em;
   text-align: center;
   color: #404041;
-  text-shadow: 1px 0 #404041;
+  text-shadow: 0.5px 0 #404041, 1px 0 #404041;
+}
+
+.body {
+  font: 300 1.8em/1.35 Lato, sans-serif;
+  color: Gray;
+  margin-top: 0.6em;
+  margin-bottom: 0.7em;
+  text-align: center;
 }
 
 .card {
@@ -198,6 +191,7 @@ html, body {
   float: right;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .backdrop {
@@ -216,7 +210,7 @@ html, body {
 }
 
 .copyright {
-  font: 400 1.2em Lato;
+  font: 400 1.2em Lato, sans-serif;
   margin-left: 3em;
   line-height: 3.3;
   float: left;
@@ -235,8 +229,11 @@ html, body {
   opacity: 0.8;
 }
 
+.contact-body {
+  font: 400 1.2em Lato, sans-serif;
+}
+
 .contact-info > a {
   color: inherit;
   text-decoration: inherit;
 }
-
