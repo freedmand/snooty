@@ -1,0 +1,85 @@
+.card {
+  width: 35em;
+}
+
+.card-body {
+  font-size: 1.8em;
+  position: relative;
+  padding-bottom: 1.5em;
+}
+
+.onion {
+  position: absolute;
+  width: 14.1em;
+  vertical-align: bottom;
+  text-align: right;
+  margin-top: -0.5em;
+  font-size: 1.3em;
+}
+
+@font-face {
+  font-family: 'icons';
+  src:    url('resources/iconfont/icomoon.eot?lyd5lr');
+  src:    url('resources/iconfont/icomoon.eot?lyd5lr#iefix') format('embedded-opentype'),
+      url('resources/iconfont/icomoon.ttf?lyd5lr') format('truetype'),
+      url('resources/iconfont/icomoon.woff?lyd5lr') format('woff'),
+      url('resources/iconfont/icomoon.svg?lyd5lr#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-onion {
+  position: relative;
+}
+
+.icon-onion:before {
+  content: "\e900";
+  color: #8D8D8D;
+  cursor: pointer;
+  vertical-align: bottom;
+  font-size: 1.2em;
+}
+
+.icon-onion:hover:before {
+  color: #008D52;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  width: 24em;
+  font-size: 0.4em;
+  text-align: left;
+  background: #2F2F2F;
+  color: White;
+  border-radius: 3px;
+  font-family: sans-serif;
+  padding: 0.5em;
+  margin-left: 0.8em;
+  margin-top: 0.4em;
+  line-height: 1.4;
+}
+
+.icon-onion:hover .tooltip {
+  display: inline-block;
+}
+
+.onion > a {
+  color: inherit;
+  text-decoration: inherit;
+}
